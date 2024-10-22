@@ -624,7 +624,7 @@ banner
 
 .main-banner {
   border-bottom: 3px dotted #eee;
-  padding-top: 160px;
+  padding-top: 140px;
   padding-bottom: 30px;
 }
 
@@ -635,8 +635,8 @@ banner
 
 .main-banner .left-content .inner-content {
   position: absolute;
-  left: 100px;
-  top: 50%;
+  left: 60px;
+  top:70%;
   transform: translateY(-50%);
 }
 
@@ -673,7 +673,7 @@ banner
 
 .main-banner .right-content .right-first-image .thumb .inner-content {
   position: absolute;
-  top: 50%;
+  top:60%;
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
@@ -683,52 +683,13 @@ banner
   color: #fff;
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
 }
 
 .main-banner .right-content .right-first-image .thumb .inner-content span {
   font-size: 16px;
   color: #fff;
   font-style: italic;
-}
-
-.main-banner .right-content .right-first-image .thumb .hover-content {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  left: 15px;
-  bottom: 15px;
-  text-align: center;
-  background-color: rgba(42,42,42,.97);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-}
-
-.main-banner .right-content .right-first-image .thumb:hover .hover-content {
-  opacity: 1;
-  visibility: visible;
-}
-
-.main-banner .right-content .right-first-image .thumb .hover-content .inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.main-banner .right-content .right-first-image .thumb .hover-content h4 {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.main-banner .right-content .right-first-image .thumb .hover-content p {
-  color: #fff;
-  padding: 0px 20px;
-  margin-bottom: 20px;
 }
 
 
