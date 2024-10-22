@@ -9,8 +9,8 @@ const MainBanner = () => {
         <div className="left-content">
             <div className="thumb">
                 <div className="inner-content">
-                    <h4>Welcome to my website</h4>
-                    <span>My mission is to raise the younger generation</span>
+                    <h4>LinkedIn store</h4>
+                    <span>Awesome store for LinkedIn</span>
                     <div className="main-border-button">
                         <Link to="/">See more!</Link>
                     </div>
