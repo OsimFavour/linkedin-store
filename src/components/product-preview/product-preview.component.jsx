@@ -21,7 +21,7 @@ const ProductPreview = () => {
                     <div className="featured__swiper">
                         <div className="container w-100">
                             {PRODUCT_DATA.map((productData) => (
-                                <SwiperSlide>
+                                <SwiperSlide key={productData.id}>
                                     <ProductCard key={productData.id} productData={productData} />
                                 </SwiperSlide>
                             ))}
