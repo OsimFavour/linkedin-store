@@ -45,7 +45,11 @@ export const addCollectionAndDocuments = async (
 export const getCategoriesAndDocuments = async () => {
   const collectionRef = collection(db, 'categories');
   const q = query(collectionRef);
+  console.log(q);
+  
 
   const querySnapshot = await getDocs(q);
+  console.log('Query Snapshot', querySnapshot);
+  
   return querySnapshot.docs.map((docSnapshot) => docSnapshot.data());
 };
