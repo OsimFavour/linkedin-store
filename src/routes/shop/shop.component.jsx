@@ -1,17 +1,39 @@
 import { useEffect } from 'react'
-import { addCollectionAndDocuments } from '../../utils/firebase.utils'
-import SHOP_DATA from '../../shop-data'
+import { useDispatch, useSelector } from "react-redux";
+
+import { selectCategoriesMap } from "../../store/categories/category.selector";
+import { getCategoriesAndDocuments } from '../../utils/firebase.utils';
+import { setCategories } from '../../store/categories/category.slice';
 
 const Shop = () => {
 
-    // Added products to the firebase store
-    
-    // useEffect(() => {
-    //     addCollectionAndDocuments("categories", SHOP_DATA)
-    // }, [])
+    const dispatch = useDispatch()
 
+    useEffect(() => {
+        const getCategoriesMap = async () => {
+            const categoriesArray = await getCategoriesAndDocuments('categories')
+            console.log(categoriesArray);
+            
+            dispatch(setCategories(categoriesArray))
+        }
+
+        getCategoriesMap()
+    }, [])
+
+    const categoriesMap = useSelector(selectCategoriesMap)
+    console.log('Categories Map>>>', selectCategoriesMap);
+    
     return (
-        <div className='p-4 m-4 tet-dark'>SHOP</div>
+        <>
+            {/* {Object.keys(categoriesMap).map((title) => {
+                const products = categoriesMap[title];
+                console.log(products);
+                
+                return (
+                    <div>{products}</div>
+                )
+            })} */}
+        </>
     )
 }
 
