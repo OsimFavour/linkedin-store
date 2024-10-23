@@ -13,6 +13,13 @@ const SideBanner = ({ bannerData }) => {
                         <p>Shop Now</p>
                     </div>
 
+                    {/* <div 
+                        className="background-image" 
+                        style={{
+                            backgroundImage: `url(${imageUrl})`
+                        }} 
+                    /> */}
+
                     <img src={imageUrl} alt=''/>
                 </div>
             </div>

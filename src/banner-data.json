@@ -7,16 +7,16 @@
     {
         "id": 2,
         "title": "Women's",
-        "imageUrl": "https://i.ibb.co/2SjYWBY/banner-image-06.png"
+        "imageUrl": "https://i.ibb.co/7YLscLy/women.png"
     },
     {
         "id": 3,
         "title": "Hat's",
-        "imageUrl": "https://i.ibb.co/8xMXMVc/banner-image-03.jpg"
+        "imageUrl": "https://i.ibb.co/W0D9B8s/hats.png"
       },
     {
         "id": 4,
         "title": "Sneaker's",
-        "imageUrl": "https://i.ibb.co/7ymbbY3/banner-right-image-05.png"
+        "imageUrl": "https://i.ibb.co/pXrxGpf/sneakers.png"
     }
 ]
