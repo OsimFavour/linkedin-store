@@ -20,19 +20,11 @@ const Shop = () => {
         getCategoriesMap()
     }, [])
 
-    const categoriesMap = useSelector(selectCategoriesMap)
-    console.log('Categories Map>>>', selectCategoriesMap);
+
     
     return (
         <>
-            {/* {Object.keys(categoriesMap).map((title) => {
-                const products = categoriesMap[title];
-                console.log(products);
-                
-                return (
-                    <div>{products}</div>
-                )
-            })} */}
+            
         </>
     )
 }
