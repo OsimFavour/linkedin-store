@@ -22,8 +22,6 @@ const Header = () => {
     const toggleIsMenuOpen = () => {
         setIsMenuOpen(!isMenuOpen)
         console.log(isMenuOpen);
-        // dispatch(setIsCartOpen(!isCartOpen))
-        // console.log('Dispatch Is Cart Open >>>', isCartOpen);
         
         
     }

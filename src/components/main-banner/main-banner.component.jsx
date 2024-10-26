@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import BannerImg from '../../assets/left-banner-image.jpg'
+
 import './main-banner.styles.scss'
 
 const MainBanner = () => {
@@ -15,7 +17,7 @@ const MainBanner = () => {
                         <Link to="/">See more!</Link>
                     </div>
                 </div>
-                <img src='https://i.ibb.co/xjkJv5k/main-banner.png' alt=""/>
+                <img src={BannerImg} alt=""/>
             </div>
         </div>
     </div>
