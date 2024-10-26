@@ -2,6 +2,7 @@ import ProductCard from "../product-card/product-card.component";
 import CustomSwiper, { SwiperSlide } from "../custom-swiper/custom-swiper.component";
 
 import PRODUCT_DATA from '../../product-data.json';
+import ProductCardOld from "../product-card/product-card-old.component";
 
 const ProductPreview = () => {
     return (
@@ -20,9 +21,9 @@ const ProductPreview = () => {
 
                     <div className="featured__swiper">
                         <div className="container w-100">
-                            {PRODUCT_DATA.map((productData) => (
-                                <SwiperSlide key={productData.id}>
-                                    <ProductCard key={productData.id} productData={productData} />
+                            {PRODUCT_DATA.map((product) => (
+                                <SwiperSlide key={product.id}>
+                                    <ProductCardOld key={product.id} product={product} />
                                 </SwiperSlide>
                             ))}
                         
