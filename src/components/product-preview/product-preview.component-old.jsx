@@ -7,7 +7,7 @@ import CategoryPreview from "../category-preview/category-preview.component";
 import { useSelector } from "react-redux";
 import { selectCategoriesMap } from "../../store/categories/category.selector";
 
-const ProductPreview = () => {
+const ProductPreviewOld = () => {
     const categoriesMap = useSelector(selectCategoriesMap);
     
     
@@ -55,4 +55,4 @@ const ProductPreview = () => {
     )
 }
 
-export default ProductPreview
+export default ProductPreviewOld
