@@ -3,13 +3,14 @@ import { useSelector } from 'react-redux';
 import { selectCategoriesMap } from '../../store/categories/category.selector';
 
 import CategoryPreview from '../../components/category-preview/category-preview.component';
-import ProductCardNew from '../../components/product-card-new/product-card-new.component';
+
+import './categories-preview.component.scss'
 
 const CategoriesPreview = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
 
   return (
-    <>
+    <div className="categories-preview">
       {Object.keys(categoriesMap).map((title) => {
         const products = categoriesMap[title];
         return (
@@ -17,8 +18,7 @@ const CategoriesPreview = () => {
         );
       })}
 
-      <ProductCardNew />
-    </>
+    </div>
   );
 };
 
