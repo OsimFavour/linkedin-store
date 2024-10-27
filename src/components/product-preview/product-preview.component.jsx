@@ -33,7 +33,7 @@ const ProductPreview = () => {
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}            
             >
-                <div className="featured__container featured__section">
+                <div className="">
 
                     <div className="featured__swiper">
                         <div className="container w-100">
