@@ -3,7 +3,6 @@ import Button from "../button/button.component"
 
 const ProductCardOld = ({ product }) => {
     const { name, imageUrl, price } = product
-    console.log(name);
     
 
     return (

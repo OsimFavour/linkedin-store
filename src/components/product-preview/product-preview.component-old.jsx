@@ -29,9 +29,7 @@ const ProductPreviewOld = () => {
 
                 </div>
 
-            <CustomSwiper
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}            
+            <CustomSwiper          
             >
                 <div className="featured__container featured__section">
 
