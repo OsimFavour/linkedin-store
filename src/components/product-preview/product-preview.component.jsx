@@ -9,6 +9,9 @@ import { selectCategoriesMap } from "../../store/categories/category.selector";
 
 const ProductPreview = () => {
     const categoriesMap = useSelector(selectCategoriesMap);
+    const firstCategories = categoriesMap[0]
+
+    console.log('First categories >>>', firstCategories);
     
     
     return (
@@ -30,8 +33,7 @@ const ProductPreview = () => {
                 </div>
 
             <CustomSwiper
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}            
+                onSlideChange={() => console.log('slide change')}           
             >
                 <div className="">
 
